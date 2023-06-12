@@ -30,7 +30,8 @@ public class Test23SaveByProxy {
         }
         Car car=dao.findById(2L);
         System.out.println("\33[33m"+car+"\33[m");
-        System.out.println("测试");
+        System.out.println("测试123");
+
 
     }
 }
