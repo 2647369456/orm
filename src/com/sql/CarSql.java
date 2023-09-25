@@ -15,6 +15,6 @@ public interface CarSql {
     List<Car> findAll();
 
     @Select("select * from t_car where cno = #{cno}")
-    Car findById();
+    Car findById(Long cid);
 
 }

@@ -15,7 +15,7 @@ public class Test23SaveByProxy {
         String cname = "保时捷" ;
         String color = "white" ;
         double price = 1500000.0 ;
-        Car car = new Car(null,cname,color,price);
+        Car car1 = new Car(null,cname,color,price);
 
         //需要dao，原来自己new
         //现在使用代理(dao)
@@ -28,6 +28,10 @@ public class Test23SaveByProxy {
         for(Car c : cars){
             System.out.println(c);
         }
+        Car car=dao.findById(2L);
+        System.out.println("\33[33m"+car+"\33[m");
+        System.out.println("测试123");
+
 
     }
 }
